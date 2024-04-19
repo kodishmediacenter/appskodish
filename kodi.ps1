@@ -15,3 +15,5 @@ Expand-Archive -Path "C:\down\plugin.video.elementum.zip" -DestinationPath "$env
 Expand-Archive -Path "C:\down\service.lt2http.zip" -DestinationPath "$env:APPDATA\Kodi\addons"
 Expand-Archive -Path "C:\down\script.elementum.burst.zip" -DestinationPath "$env:APPDATA\Kodi\addons"
 Expand-Archive -Path "C:\down\context.elementum.zip" -DestinationPath "$env:APPDATA\Kodi\addons"
+
+rm -r C:\down\*
