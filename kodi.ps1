@@ -1,4 +1,4 @@
-rm -r C:\down\
+# rm -r C:\down\
 mkdir C:\down\
 cd C:\down\
 
