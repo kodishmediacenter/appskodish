@@ -8,6 +8,4 @@ Invoke-WebRequest -Uri "https://archive.org/download/kodi_20240419/Kodi.exe" -Ou
 # Executar o arquivo baixado
 Write-Host "Iniciando a Inslação do Kodi da Kodish [3/3]"
 Start-Process -FilePath "C:\down\kodi.exe"
-pause
 
-rm -r C:\down\*
