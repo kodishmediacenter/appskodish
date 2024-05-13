@@ -1,0 +1,56 @@
+# Changelog v2024.2.1
+
+- Ajuste dos menus para melhor aparência e leitura.
+
+- Adicionado o parâmetros na execução do defrag:
+
+  /B - Executa a operação de otimização do boot ou rearranjo dos arquivos de 
+       inicialização do sistema. Esse parametro é executado quando a partição
+	   selecionada é do sistema operacional.
+	   
+  /H - Executa a desfragmentação com prioridade normal ao invés de baixa.
+  
+  /V - Mostra uma descrição detalhada da fragmentação do volume.
+
+
+# Changelog v2024.2.0
+
+- Corrigida a listagem de volumes de discos dinâmicos.
+
+  Na presença de discos dinâmicos ao selecionar uma das unidades serão mostradas 
+  as partições visíveis de todos as unidades.
+  
+
+- Adicionada a opção para limpeza automática avançada de disco através do Cleanmgr.
+
+  O Windows possui um perfil de limpeza avançada com o Cleanmgr cuja janela de 
+  configuração é acessada através do executar ou pela janela dos prompts com o 
+  comando:
+
+  cleanmgr /sageset:6553
+
+  Todavia esse comando apenas abre a janela para selecionar as opções e gravar 
+  no perfil 6553. Para iniciar o processo com as opções marcadas é necessário 
+  executar o comando: 
+
+  cleanmgr /sagerun:6553
+  
+
+A nova opção do script TestDefragDisk, "Limpeza de disco para Windows (Cleanmgr)", 
+marca todas as opções e executa automaticamente a limpeza de disco. Fique tranquilo
+pois nenhum arquivo pessoal é apagado. Verifique se não precisa restaurar arquivos 
+da lixeira pois ela será esvaziada.
+
+Ao finalizar a limpeza de disco o script vai automaticamente para a opção que 
+lista as unidades conectadas conforme a versão anterior. Caso não queira
+prosseguir basta fechar a janela do script.
+
+
+# TestDefragDisk v2024.1.0
+
+O script TestDefragDisk tem como objetivo mostrar algumas informações importantes 
+das unidades de disco, testar seus desempenhos e otimizar suas partições.
+
+
+Grupo Sayro Digital
+https://sayrodigital.net
