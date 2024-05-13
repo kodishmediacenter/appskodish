@@ -3,7 +3,7 @@ Write-Host "====================================================================
 Write-Host "======================== Kodish Store Para Windows ======================================================================================"
 Write-Host "========================================================================================================================================="
 Write-Host "`n"
-$opcao = Read-Host "Escolha uma opção (1 Kodi 2 Kodi da Kodish 3 Torr Server 4 Win Boot (Sayro DIgital e Duanny) 100 Remover Pasta de Download):"
+$opcao = Read-Host "Escolha uma opção (1 Kodi 2 Kodi da Kodish 3 Torr Server (64 bits) 4 Torr Server (64 bits) 5 Win Boot (Sayro DIgital e Duanny) 100 Remover Pasta de Download):"
 
 switch ($opcao) {
     '1' {
@@ -19,6 +19,11 @@ switch ($opcao) {
         irm https://raw.githubusercontent.com/kodishmediacenter/appskodish/main/torr.ps1 | iex
     }
     '4'{
+        Write-Host "Baixar Torr Server for Windows 32 bits"
+        irm https://raw.githubusercontent.com/kodishmediacenter/appskodish/main/torr32.ps1 | iex
+    }
+    
+    '5'{
         Write-Host "Baixar Win boot (Sayro DIgital e Duanny)"
         irm https://raw.githubusercontent.com/kodishmediacenter/appskodish/main/winboot.ps1 | iex
     }
