@@ -20,7 +20,7 @@ switch ($opcao) {
     }
     '4'{
         Write-Host "Baixar Torr Server for Windows 32 bits"
-        irm https://raw.githubusercontent.com/kodishmediacenter/appskodish/main/torr32.ps1 | iex
+        irm https://raw.githubusercontent.com/kodishmediacenter/appskodish/main/torr32bits.ps1 | iex
     }
     
     '5'{
