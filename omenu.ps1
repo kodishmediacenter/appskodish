@@ -3,7 +3,7 @@ Write-Host "====================================================================
 Write-Host "======================== Kodish Store Para Windows ======================================================================================"
 Write-Host "========================================================================================================================================="
 Write-Host "`n"
-$opcao = Read-Host "`n `n 1 Kodi `n 2 Kodi da Kodish `n 3 Torr Server (64 bits) `n 4 Torr Server (32 bits) `n 5 Win Boot (Sayro DIgital e Duanny) `n 100 Remover Pasta de Download `n`n Escolha uma Opção:"
+$opcao = Read-Host "`n `n 1 Kodi `n 2 Kodi da Kodish `n 3 Torr Server (64 bits) `n 4 Torr Server (32 bits) `n 5 Win Boot (Sayro Digital e Duanny) `n 6 Fix Internet (Sayro Digital e Duanny) `n 7 Test Defrag Disk (Sayro Digital e Duanny) `n 100 Remover Pasta de Download `n`n Escolha uma Opção:"
 
 switch ($opcao) {
     '1' {
@@ -26,6 +26,14 @@ switch ($opcao) {
     '5'{
         Write-Host "Baixar Win boot (Sayro DIgital e Duanny)"
         irm https://raw.githubusercontent.com/kodishmediacenter/appskodish/main/winboot.ps1 | iex
+    }
+	'6'{
+        Write-Host "Baixar Fix Internet (Sayro DIgital e Duanny)"
+        irm https://raw.githubusercontent.com/kodishmediacenter/appskodish/main/Fixinternet.ps1 | iex
+    }
+	'7'{
+        Write-Host "Baixar Test Defrag Disk (Sayro DIgital e Duanny)"
+        irm https://raw.githubusercontent.com/kodishmediacenter/appskodish/main/TestDefragDisk.ps1 | iex
     }
     '100' {
         Write-Host "Limpar a Pasta de Trabalho"
