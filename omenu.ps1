@@ -3,7 +3,16 @@ Write-Host "====================================================================
 Write-Host "======================== Kodish Store Para Windows ======================================================================================"
 Write-Host "========================================================================================================================================="
 Write-Host "`n"
-$opcao = Read-Host "`n `n 1 Kodi `n 2 Kodi da Kodish `n 3 Torr Server (64 bits) `n 4 Torr Server (32 bits) `n 5 Win Boot (Sayro Digital e Duanny) `n 6 Fix Internet (Sayro Digital e Duanny) `n 7 Test Defrag Disk (Sayro Digital e Duanny) `n  8 Baixar Winget `n 100 Remover Pasta de Download `n`n Escolha uma Opção:"
+write-Host "1 Kodi `n" 
+write-Host "2 Kodi da Kodish `n "
+write-Host "3 Torr Server (64 bits) `n" 
+write-Host "4 Torr Server (32 bits) `n" 
+write-Host "5 Win Boot (Sayro Digital e Duanny) `n"
+write-Host "6 Fix Internet (Sayro Digital e Duanny) `n" 
+write-Host "7 Test Defrag Disk (Sayro Digital e Duanny) `n"
+write-Host "8 Baixar Winget `n"
+write-Host "100 Remover Pasta de Download`n"
+$opcao = Read-Host "`n Escolha uma Opção:"
 
 switch ($opcao) {
     '1' {
