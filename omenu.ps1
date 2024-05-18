@@ -3,7 +3,7 @@ Write-Host "====================================================================
 Write-Host "======================== Kodish Store Para Windows ======================================================================================"
 Write-Host "========================================================================================================================================="
 Write-Host "`n"
-$opcao = Read-Host "`n `n 1 Kodi `n 2 Kodi da Kodish `n 3 Torr Server (64 bits) `n 4 Torr Server (32 bits) `n 5 Win Boot (Sayro Digital e Duanny) `n 6 Fix Internet (Sayro Digital e Duanny) `n 7 Test Defrag Disk (Sayro Digital e Duanny) `n 100 Remover Pasta de Download `n`n Escolha uma Opção:"
+$opcao = Read-Host "`n `n 1 Kodi `n 2 Kodi da Kodish `n 3 Torr Server (64 bits) `n 4 Torr Server (32 bits) `n 5 Win Boot (Sayro Digital e Duanny) `n 6 Fix Internet (Sayro Digital e Duanny) `n 7 Test Defrag Disk (Sayro Digital e Duanny) `n  8 Baixar Winget `n 100 Remover Pasta de Download `n`n Escolha uma Opção:"
 
 switch ($opcao) {
     '1' {
@@ -34,6 +34,10 @@ switch ($opcao) {
 	'7'{
         Write-Host "Baixar Test Defrag Disk (Sayro DIgital e Duanny)"
         irm https://raw.githubusercontent.com/kodishmediacenter/appskodish/main/TestDefragDisk.ps1 | iex
+    }
+    	'8'{
+    	write-Host "Baixando Winget Script"
+     	irm https://raw.githubusercontent.com/kodishmediacenter/appskodish/main/winget.ps1 | iex
     }
     '100' {
         Write-Host "Limpar a Pasta de Trabalho"
