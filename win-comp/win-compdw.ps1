@@ -11,16 +11,36 @@ $opcao = Read-Host "`n Escolha uma Opção:"
 
 switch ($opcao) {
     '1' {
-        Write-Host "Iniciar a Instalação do Kodi"
-        irm https://raw.githubusercontent.com/kodishmediacenter/appskodish/main/win-comp/win10-22h2.cmd | iex
+        #Write-Host "Criando pasta Download [1/3]"
+        mkdir C:\down
+        # Baixar o arquivo executável do Kodi
+        Write-Host "Baixando o Script do Windows"
+        Invoke-WebRequest -Uri "https://raw.githubusercontent.com/kodishmediacenter/appskodish/main/win-comp/win10-22h2.cmd" -OutFile "C:\down\win10-22h2.cmd"
+
+        # Executar o arquivo baixado
+        Write-Host "Iniciando a compilação do Windows [3/3]"
+        Start-Process -FilePath "C:\down\win10-22h2.cmd"
     }
     '2' {
-        Write-Host "Iniciar a Instalação do Kodi da Kodish"
-        irm https://raw.githubusercontent.com/kodishmediacenter/appskodish/main/win-comp/win11-23h2.cmd | iex
-    }
+        mkdir C:\down
+        # Baixar o arquivo executável do Kodi
+        Write-Host "Baixando o Script do Windows"
+        Invoke-WebRequest -Uri "https://raw.githubusercontent.com/kodishmediacenter/appskodish/main/win-comp/win11-23h2.cmd" -OutFile "C:\down\win11-23h2.cmd"
+
+        # Executar o arquivo baixado
+        Write-Host "Iniciando a compilação do Windows [3/3]"
+        Start-Process -FilePath "C:\down\win11-23h2.cmd"
+	    }
     '3'{
-        Write-Host "Baixar Torr Server for Windows 64 bits"
-        irm https://raw.githubusercontent.com/kodishmediacenter/appskodish/main/win-comp/win11-24h2.cmd | iex
+        mkdir C:\down
+        # Baixar o arquivo executável do Kodi
+        Write-Host "Baixando o Script do Windows [2/3]"
+        Invoke-WebRequest -Uri "https://raw.githubusercontent.com/kodishmediacenter/appskodish/main/win-comp/win11-24h2.cmd" -OutFile "C:\down\win11-23h2.cmd"
+
+        # Executar o arquivo baixado
+        Write-Host "Iniciando a compilação do Windows [3/3]"
+        Start-Process -FilePath "C:\down\win11-23h2.cmd"
+
     }
     Default {
         Write-Host "Opção inválida."
