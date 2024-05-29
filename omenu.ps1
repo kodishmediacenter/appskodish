@@ -12,6 +12,7 @@ write-Host "6 Fix Internet (Sayro Digital e Duanny) `n"
 write-Host "7 Test Defrag Disk (Sayro Digital e Duanny) `n"
 write-Host "8 Baixar Winget `n"
 write-Host "9 Instalar Wmic para Windows 11 24H2 `n"
+write-Host "10 Voltar menu do botão direito do mouse classico (win 11) `n"
 write-Host "100 Remover Pasta de Download`n"
 $opcao = Read-Host "`n Escolha uma Opção:"
 
@@ -53,6 +54,10 @@ switch ($opcao) {
      	write-Host "Baixando Wmic para Windows 11"
       	irm https://raw.githubusercontent.com/kodishmediacenter/appskodish/main/wmic.ps1 | iex     
    }
+   	'10'{
+        write-Host "Baixando script do menu classico do botão direito do mouse windows 11"
+   	irm  https://raw.githubusercontent.com/kodishmediacenter/appskodish/main/menu-classico.ps1 | iex 
+  }
     '100' {
         Write-Host "Limpar a Pasta de Trabalho"
         Remove-Item -Path "C:\down\" -Recurse -Force
