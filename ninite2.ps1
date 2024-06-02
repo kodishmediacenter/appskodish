@@ -6,7 +6,7 @@ Write-Host "`n"
 write-Host "1 Chrome `n" 
 write-Host "2 Firefox `n "
 write-Host "3 Dot Net `n" 
-write-Host "4 Torr Server (32 bits) `n" 
+#write-Host "4 Torr Server (32 bits) `n" 
 $opcao = Read-Host "`n Escolha uma Opção:"
 
 switch ($opcao) {
