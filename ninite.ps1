@@ -18,7 +18,7 @@ switch ($opcao) {
 		
 		# Baixar o arquivo executável do Kodi
 		Write-Host "Baixando o Chrome [2/3]"
-		Invoke-WebRequest -Uri "https://raw.githubusercontent.com/kodishmediacenter/appskodish/main/https://raw.githubusercontent.com/kodishmediacenter/appskodish/main/chrome.exe" -OutFile "C:\down\chrome.exe"
+		Invoke-WebRequest -Uri "https://raw.githubusercontent.com/kodishmediacenter/appskodish/main/chrome.exe" -OutFile "C:\down\chrome.exe"
 
 		# Executar o arquivo baixado
 		Write-Host "Iniciando a Inslação do Chrome via Ninite  [3/3]"
@@ -30,7 +30,7 @@ switch ($opcao) {
 		mkdir C:\down
 		# Baixar o arquivo executável do Kodi
 		Write-Host "Baixando o Firefox[2/3]"
-		Invoke-WebRequest -Uri "https://raw.githubusercontent.com/kodishmediacenter/appskodish/main/https://raw.githubusercontent.com/kodishmediacenter/appskodish/main/firefox.exe" -OutFile "C:\down\firefox.exe"
+		Invoke-WebRequest -Uri "https://raw.githubusercontent.com/kodishmediacenter/appskodish/main/firefox.exe" -OutFile "C:\down\firefox.exe"
 
 		# Executar o arquivo baixado
 		Write-Host "Iniciando a Inslação do Firefox via Ninite  [3/3]"
@@ -42,7 +42,7 @@ switch ($opcao) {
 		mkdir C:\down
 		# Baixar o arquivo executável do Kodi
 		Write-Host "Baixando o Dotnet [2/3]"
-		Invoke-WebRequest -Uri "https://raw.githubusercontent.com/kodishmediacenter/appskodish/main/https://raw.githubusercontent.com/kodishmediacenter/appskodish/main/dotnet.exe" -OutFile "C:\down\dotnet.exe"
+		Invoke-WebRequest -Uri "https://raw.githubusercontent.com/kodishmediacenter/appskodish/main/dotnet.exe" -OutFile "C:\down\dotnet.exe"
 
 		# Executar o arquivo baixado
 		Write-Host "Iniciando a Inslação do Dot net via Ninite  [3/3]"
