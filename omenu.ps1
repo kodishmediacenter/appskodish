@@ -13,6 +13,7 @@ write-Host "7 Test Defrag Disk (Sayro Digital e Duanny) `n"
 write-Host "8 Baixar Winget `n"
 write-Host "9 Instalar Wmic para Windows 11 24H2 `n"
 write-Host "10 Voltar menu do botão direito do mouse classico (win 11) `n"
+write-Host "11 Baixar Aomei Partition para auxiliar nas partições do seu Computador  `n"
 write-Host "100 Remover Pasta de Download`n"
 $opcao = Read-Host "`n Escolha uma Opção:"
 
@@ -57,6 +58,10 @@ switch ($opcao) {
    	'10'{
         write-Host "Baixando script do menu classico do botão direito do mouse windows 11"
    	irm  https://raw.githubusercontent.com/kodishmediacenter/appskodish/main/menu-classico.ps1 | iex 
+  }
+     	'11'{
+        write-Host "Baixando Aomei Partition"
+   	irm  https://raw.githubusercontent.com/kodishmediacenter/appskodish/main/aomei.ps1 | iex 
   }
     '100' {
         Write-Host "Limpar a Pasta de Trabalho"
