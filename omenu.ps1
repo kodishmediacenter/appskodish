@@ -58,7 +58,7 @@ switch ($opcao) {
    }
    	'10'{
         write-Host "Baixando script do menu classico do botão direito do mouse windows 11"
-   	irm  https://raw.githubusercontent.com/kodishmediacenter/appskodish/main/menu-classico.ps1 | iex 
+   	irm  https://raw.githubusercontent.com/kodishmediacenter/appskodish/main/menu-classico1.ps1 | iex 
   }
      	'11'{
         write-Host "Baixando Aomei Partition"
