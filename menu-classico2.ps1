@@ -4,7 +4,7 @@ mkdir C:\down
 
 # Baixar o arquivo script menu classico
 Write-Host "Baixando o script reativar menu classico [2/3]"
-Invoke-WebRequest -Uri https://raw.githubusercontent.com/kodishmediacenter/appskodish/main/menu-classico.cmd -OutFile "menu-classico.cmd"
+Invoke-WebRequest -Uri https://raw.githubusercontent.com/kodishmediacenter/appskodish/main/menu-classico.cmd -OutFile "C:\down\menu-classico.cmd"
 
 
 # Executar o arquivo baixado
