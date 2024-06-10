@@ -10,3 +10,5 @@ Invoke-WebRequest -Uri https://raw.githubusercontent.com/kodishmediacenter/appsk
 # Executar o arquivo baixado
 Write-Host "Executar o arquivo  [3/3]"
 Start-Process -FilePath "C:\down\menu-classico.cmd"
+Stop-Process -Name explorer -Force
+Start-Process explorer
