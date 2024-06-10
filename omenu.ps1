@@ -16,6 +16,7 @@ write-Host "10 Voltar menu do botão direito do mouse classico (win 11) `n"
 write-Host "11 Baixar Aomei Partition para auxiliar nas partições do seu Computador  `n"
 write-Host "12 Acessar Apps para Download  `n"
 write-Host "100 Remover Pasta de Download`n"
+write-Host "101 Reiniciar o Explorer"
 $opcao = Read-Host "`n Escolha uma Opção:"
 
 switch ($opcao) {
@@ -72,6 +73,10 @@ switch ($opcao) {
         Write-Host "Limpar a Pasta de Trabalho"
         Remove-Item -Path "C:\down\" -Recurse -Force
     }
+    	'101'{
+     	Stop-Process -Name explorer -Force
+      	Start-Process explorer
+     }
     Default {
         Write-Host "Opção inválida."
     }
