@@ -16,6 +16,7 @@ write-Host "10 Voltar menu do botão direito do mouse classico (win 11) `n"
 write-Host "11 Baixar Aomei Partition para auxiliar nas partições do seu Computador  `n"
 write-Host "12 Acessar Apps para Download  `n"
 write-Host "13 Acessar EXM Tweeks  `n"
+write-Host "14 Acessar Win 11 Debloat  `n"
 write-Host "100 Remover Pasta de Download`n"
 write-Host "101 Reiniciar o Explorer"
 $opcao = Read-Host "`n Escolha uma Opção:"
@@ -73,6 +74,9 @@ switch ($opcao) {
     	'13'{
         write-Host "Acessando Ninite Apps"
    	irm https://raw.githubusercontent.com/kodishmediacenter/appskodish/main/exm.ps1 | iex 
+  }
+  	'14'{
+   	& ([scriptblock]::Create((irm "https://raw.githubusercontent.com/Raphire/Win11Debloat/master/Get.ps1")))
   }
 
        '100' {
