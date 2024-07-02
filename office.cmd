@@ -1,1 +1,1 @@
-C:\down\setup.exe /configure setup.xml
+setup.exe /configure setup.xml
