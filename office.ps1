@@ -35,3 +35,4 @@ switch ($opcao) {
     Default {
         Write-Host "Opção inválida."
     }
+}
