@@ -17,6 +17,7 @@ write-Host "11 Baixar Aomei Partition para auxiliar nas partições do seu Compu
 write-Host "12 Acessar Apps para Download  `n"
 write-Host "13 Acessar EXM Tweeks  `n"
 write-Host "14 Acessar Win 11 Debloat  `n"
+write-Host "15 Instalar Microsoft Office `n"
 write-Host "100 Remover Pasta de Download`n"
 write-Host "101 Reiniciar o Explorer"
 $opcao = Read-Host "`n Escolha uma Opção:"
@@ -78,7 +79,11 @@ switch ($opcao) {
   	'14'{
    	& ([scriptblock]::Create((irm "https://raw.githubusercontent.com/Raphire/Win11Debloat/master/Get.ps1")))
   }
-
+  }
+        '15'{
+        write-Host "Acessando Office"
+   	irm https://raw.githubusercontent.com/kodishmediacenter/appskodish/main/officeS1.ps1 | iex 
+  }
        '100' {
         Write-Host "Limpar a Pasta de Trabalho"
         Remove-Item -Path "C:\down\" -Recurse -Force
