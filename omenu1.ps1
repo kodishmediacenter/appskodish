@@ -1,6 +1,3 @@
-Aqui está o código corrigido para exibir e executar a seleção das opções em português brasileiro:
-
-```powershell
 Clear-Host
 Write-Host "========================================================================================================================================="
 Write-Host "======================== Kodish Store Para Windows ======================================================================================"
@@ -97,4 +94,3 @@ switch ($opcao) {
         Write-Host "Opção inválida."
     }
 }
-```
