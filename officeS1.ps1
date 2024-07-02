@@ -1,9 +1,9 @@
 # Criar pasta base
 Write-Host "Criando pasta Download [1/2]"
 mkdir C:\down
-
+clear
 # Baixar o arquivo executável do Winboot
-Write-Host "############## Microsoft Office ####################/n/n"
+Write-Host "############## Microsoft Office #################### \n \n"
 Write-Host "1 - Office Pro Plus 2024 Retail"
 Write-Host "2 - Office Pro Plus 2021 Volume"
 Write-Host "3 - Office Pro Plus 2019 Volume"
