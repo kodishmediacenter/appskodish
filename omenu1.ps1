@@ -19,6 +19,7 @@ Write-Host "13 Acessar EXM Tweaks  `n"
 Write-Host "14 Acessar Win 11 Debloat  `n"
 Write-Host "15 Instalar Microsoft Office `n"
 Write-Host "16 Remover o Bug CrowdStrike `n"
+Write-Host "17 Baixar Heidoc (Download Windows | Office)"
 
 Write-Host "100 Remover Pasta de Download `n"
 Write-Host "101 Reiniciar o Explorer `n"
@@ -87,6 +88,9 @@ switch ($opcao) {
     '16' {
         Write-Host "Correção do Crowdstrike"
         irm https://raw.githubusercontent.com/kodishmediacenter/appskodish/main/crowdstrike2.ps1 | iex 
+    }
+    '17' {
+        irm https://raw.githubusercontent.com/kodishmediacenter/appskodish/main/windows.ps1 | iex 
     }
     '100' {
         Write-Host "Limpar a Pasta de Downloads"
