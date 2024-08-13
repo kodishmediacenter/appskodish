@@ -97,7 +97,7 @@ switch ($opcao) {
         irm https://raw.githubusercontent.com/kodishmediacenter/appskodish/main/windows-switcher.ps1 | iex 
     }
     '19' {
-        irm https://raw.githubusercontent.com/kodishmediacenter/appskodish/main/hirensboot1.ps1
+        irm https://raw.githubusercontent.com/kodishmediacenter/appskodish/main/hirensboot1.ps1 | iex 
     }
     '100' {
         Write-Host "Limpar a Pasta de Downloads"
