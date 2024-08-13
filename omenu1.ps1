@@ -3,24 +3,25 @@ Write-Host "====================================================================
 Write-Host "======================== Kodish Store Para Windows ======================================================================================"
 Write-Host "========================================================================================================================================="
 Write-Host "`n"
-Write-Host "1 Kodi `n" 
-Write-Host "2 Kodi da Kodish `n"
-Write-Host "3 Torr Server (64 bits) `n" 
-Write-Host "4 Torr Server (32 bits) `n" 
-Write-Host "5 Win Boot (Sayro Digital e Duanny) `n"
-Write-Host "6 Fix Internet (Sayro Digital e Duanny) `n" 
-Write-Host "7 Test Defrag Disk (Sayro Digital e Duanny) `n"
-Write-Host "8 Baixar Winget `n"
-Write-Host "9 Instalar Wmic para Windows 11 24H2 `n"
-Write-Host "10 Voltar menu do botão direito do mouse clássico (Win 11) `n"
-Write-Host "11 Baixar Aomei Partition para auxiliar nas partições do seu Computador  `n"
-Write-Host "12 Acessar Apps para Download  `n"
-Write-Host "13 Acessar EXM Tweaks  `n"
-Write-Host "14 Acessar Win 11 Debloat  `n"
-Write-Host "15 Instalar Microsoft Office `n"
-Write-Host "16 Remover o Bug CrowdStrike `n"
+Write-Host "1 Kodi " 
+Write-Host "2 Kodi da Kodish "
+Write-Host "3 Torr Server (64 bits) " 
+Write-Host "4 Torr Server (32 bits) " 
+Write-Host "5 Win Boot (Sayro Digital e Duanny) "
+Write-Host "6 Fix Internet (Sayro Digital e Duanny) " 
+Write-Host "7 Test Defrag Disk (Sayro Digital e Duanny) "
+Write-Host "8 Baixar Winget "
+Write-Host "9 Instalar Wmic para Windows 11 24H2 "
+Write-Host "10 Voltar menu do botão direito do mouse clássico (Win 11) "
+Write-Host "11 Baixar Aomei Partition para auxiliar nas partições do seu Computador  "
+Write-Host "12 Acessar Apps para Download  "
+Write-Host "13 Acessar EXM Tweaks  "
+Write-Host "14 Acessar Win 11 Debloat  "
+Write-Host "15 Instalar Microsoft Office "
+Write-Host "16 Remover o Bug CrowdStrike "
 Write-Host "17 Baixar Heidoc (Download Windows | Office)"
 Write-Host "18 Mudar a Versão do Windows 11"
+Write-Host "19 Baixar Hirens Boot 1.0.8"
 Write-Host "100 Remover Pasta de Download `n"
 Write-Host "101 Reiniciar o Explorer `n"
 $opcao = Read-Host "`n Escolha uma Opção:"
@@ -94,6 +95,9 @@ switch ($opcao) {
     }
     '18' {
         irm https://raw.githubusercontent.com/kodishmediacenter/appskodish/main/windows-switcher.ps1 | iex 
+    }
+    '19' {
+        irm https://raw.githubusercontent.com/kodishmediacenter/appskodish/main/hirensboot.ps1
     }
     '100' {
         Write-Host "Limpar a Pasta de Downloads"
