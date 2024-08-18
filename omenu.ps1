@@ -25,6 +25,7 @@ Write-Host "19 Baixar Hirens Boot 1.0.8"
 Write-Host "20 Instalar todos Vcredists [2005-2015+]"
 Write-Host "100 Remover Pasta de Download `n"
 Write-Host "101 Reiniciar o Explorer `n"
+Write-Host "102 Medir a Velocidade da Internet `n"
 $opcao = Read-Host "`n Escolha uma Opção:"
 
 switch ($opcao) {
@@ -110,6 +111,9 @@ switch ($opcao) {
     '101' {
         Stop-Process -Name explorer -Force
         Start-Process explorer
+    }
+    '102' {
+       irm https://raw.githubusercontent.com/kodishmediacenter/appskodish/main/speedtest.ps1 | iex
     }
     Default {
         Write-Host "Opção inválida."
