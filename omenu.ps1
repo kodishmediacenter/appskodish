@@ -24,7 +24,7 @@ Write-Host "18 Mudar a Versão do Windows 11"
 Write-Host "19 Baixar Hirens Boot 1.0.8"
 Write-Host "20 Instalar todos Vcredists [2005-2015+]"
 Write-Host "100 Remover Pasta de Download `n"
-Write-Host "101 Reiniciar o Explorer `n"
+Write-Host "101 Reiniciar o Explorer "
 Write-Host "102 Medir a Velocidade da Internet `n"
 $opcao = Read-Host "`n Escolha uma Opção:"
 
