@@ -23,4 +23,4 @@ switch ($opcao) {
         irm https://raw.githubusercontent.com/kodishmediacenter/appskodish/main/Biblioteca/Leia-me%20primeiro.txt | iex
     }
 
-)
+}
