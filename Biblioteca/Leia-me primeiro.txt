@@ -1,0 +1,21 @@
+
+O script "Mover_biblioteca.cmd" reduz a partição do Windows criando uma nova partição 
+com um tamanho de sua escolha e em seguida move os arquivos da biblioteca do usuário 
+para a partição criada. Você pode escolher a partição de outra unidade já conectada
+desde que não precise removê-la em algum momento. Uma vez realizada essa tarefa não 
+altere a letra da partição. Ao selecionar outra partição ela não será reduzida.
+
+A ideia do script é mover as pastas da biblioteca para um local onde ficarão
+permanentemente ou até uma próxima formatação.
+
+O destino ficará com a mesma estrtutura da origem exceto pela ausência de pastas do 
+sistema, registro e da pasta de configurações da conta de usuário que não podem ser
+movidos.
+
+Use o script "Restaurar.cmd" para voltar a biblioteca para o local padrão de origem.
+
+Atenção! O script "Restaurar.cmd" é para desfazer o foi feito pelo script 
+"Mover_biblioteca.cmd" no usuário de origem e não para qualquer usuário.
+
+___________________
+Grupo Sayro Digital
