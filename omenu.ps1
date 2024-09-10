@@ -23,6 +23,7 @@ Write-Host "17 Baixar Heidoc (Download Windows | Office)"
 Write-Host "18 Mudar a Versão do Windows 11"
 Write-Host "19 Baixar Hirens Boot 1.0.8"
 Write-Host "20 Instalar todos Vcredists [2005-2015+]"
+Write-Host "21 Backup da Biblioteca do Usuario [Sayro Digital]"
 Write-Host "`n"
 Write-Host "100 Remover Pasta de Download"
 Write-Host "101 Reiniciar o Explorer "
@@ -105,6 +106,9 @@ switch ($opcao) {
     }
     '20'{
         irm https://raw.githubusercontent.com/kodishmediacenter/appskodish/main/vcredist.ps1 | iex
+    }
+    '21'{
+        irm https://raw.githubusercontent.com/kodishmediacenter/appskodish/main/moverbibioteca.ps1 | iex
     }
     '100' {
         Write-Host "Limpar a Pasta de Downloads"
