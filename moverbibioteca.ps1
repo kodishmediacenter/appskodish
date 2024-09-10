@@ -7,6 +7,7 @@ Write-Host "1 Criar o Backup da Biblioteca "
 Write-Host "2 Restaurar o Backup da Biblioteca "
 Write-Host "3 Leiame " 
 Write-Host "═════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════`n`n"
+mkdir C:\down
 $opcao = Read-Host "`n Escolha uma Opção:"
 
 switch ($opcao) {
