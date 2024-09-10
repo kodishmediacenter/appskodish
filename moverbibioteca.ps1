@@ -11,16 +11,18 @@ $opcao = Read-Host "`n Escolha uma Opção:"
 
 switch ($opcao) {
     '1' {
-        Write-Host "Iniciar a Instalação do Kodi"
-        irm https://raw.githubusercontent.com/kodishmediacenter/appskodish/main/Biblioteca/Mover_Biblioteca.cmd | iex
+        Invoke-WebRequest -Uri "https://raw.githubusercontent.com/kodishmediacenter/appskodish/main/Biblioteca/Mover_Biblioteca.cmd" -OutFile "C:\down\Mover_Biblioteca.cmd"
+        Start-Process -FilePath "C:\down\Mover_Biblioteca.cmd"
     }
     '2' {
-        Write-Host "Iniciar a Instalação do Kodi da Kodish"
-        irm https://raw.githubusercontent.com/kodishmediacenter/appskodish/main/Biblioteca/Restaurar.cmd | iex
+        
+        Invoke-WebRequest -Uri "https://raw.githubusercontent.com/kodishmediacenter/appskodish/main/Biblioteca/Restaurar.cmd" -OutFile "C:\down\Restaurar.cmd"
+        Start-Process -FilePath "C:\down\Restaurar.cmd"
     }
     '3' {
         Write-Host "Baixar Torr Server para Windows 64 bits"
-        irm https://raw.githubusercontent.com/kodishmediacenter/appskodish/main/Biblioteca/Leia-me%20primeiro.txt | iex
+        Invoke-WebRequest -Uri "https://raw.githubusercontent.com/kodishmediacenter/appskodish/main/Biblioteca/Leia-me%20primeiro.txt" -OutFile "C:\down\leiame.txt"
+        Start-Process -FilePath "C:\down\leiame.txt"
     }
 
 }
