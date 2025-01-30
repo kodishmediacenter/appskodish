@@ -38,7 +38,7 @@ switch ($opcao) {
     }
     '2' {
         Write-Host "Iniciar a Instalação do Kodi da Kodish"
-        irm https://raw.githubusercontent.com/kodishmediacenter/appskodish/main/kodish2.ps1 | iex
+        irm https://raw.githubusercontent.com/kodishmediacenter/appskodish/main/kodish.ps1 | iex
     }
     '3' {
         Write-Host "Baixar Torr Server para Windows 64 bits"
