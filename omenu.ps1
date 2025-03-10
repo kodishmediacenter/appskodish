@@ -25,6 +25,7 @@ Write-Host "18 Mudar a Versão do Windows 11"
 Write-Host "19 Baixar Hirens Boot 1.0.8"
 Write-Host "20 Instalar todos Vcredists [2005-2015+]"
 Write-Host "21 Backup da Biblioteca do Usuario [Sayro Digital]"
+Write-Host "22 Win Utils do Chris Titus"
 Write-Host "`n"
 Write-Host "100 Remover Pasta de Download"
 Write-Host "101 Reiniciar o Explorer "
@@ -110,6 +111,9 @@ switch ($opcao) {
     }
     '21'{
         irm https://raw.githubusercontent.com/kodishmediacenter/appskodish/main/moverbibioteca.ps1 | iex
+    }
+    '22'{
+        irm "https://christitus.com/win" | iex
     }
     '100' {
         Write-Host "Limpar a Pasta de Downloads"
