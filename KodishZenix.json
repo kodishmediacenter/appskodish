@@ -17,5 +17,14 @@
       "uploadDate": "2024-01-06T00:00:00.000Z",
       "fileSize": "680.5 MB"
     }
+    {
+      "title": "SuperTux",
+      "uris": [
+        "https://github.com/SuperTux/supertux/releases/download/v0.6.3/SuperTux-v0.6.3-win64.msi"
+      ],
+      "uploadDate": "2024-01-06T00:00:00.000Z",
+      "fileSize": "170.53 MB"
+    }
+   
   ]
 }
