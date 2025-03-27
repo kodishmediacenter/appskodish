@@ -16,7 +16,7 @@
       ],
       "uploadDate": "2024-01-06T00:00:00.000Z",
       "fileSize": "680.5 MB"
-    }
+    },
     {
       "title": "SuperTux",
       "uris": [
@@ -25,6 +25,5 @@
       "uploadDate": "2024-01-06T00:00:00.000Z",
       "fileSize": "170.53 MB"
     }
-   
-  ]
+     ]
 }
