@@ -27,6 +27,7 @@ Write-Host "20 Instalar todos Vcredists [2005-2015+]"
 Write-Host "21 Backup da Biblioteca do Usuario [Sayro Digital]"
 Write-Host "22 Win Utils do Chris Titus"
 Write-Host "23 Flyby para pular os requisitos de Instalação do Windows 11"
+Write-Host "24 CFixer para ajustar seu Windows"
 Write-Host "`n"
 Write-Host "100 Remover Pasta de Download"
 Write-Host "101 Reiniciar o Explorer "
@@ -118,6 +119,9 @@ switch ($opcao) {
     }
     '23'{
         irm "https://raw.githubusercontent.com/kodishmediacenter/appskodish/refs/heads/main/flyby.ps1" | iex
+    }
+    '24'{
+        irm "https://raw.githubusercontent.com/kodishmediacenter/appskodish/refs/heads/main/cfixer.ps1" | iex
     }
     '100' {
         Write-Host "Limpar a Pasta de Downloads"
