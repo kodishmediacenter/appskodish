@@ -116,6 +116,9 @@ switch ($opcao) {
     '22'{
         irm "https://christitus.com/win" | iex
     }
+    '23'{
+        irm "https://raw.githubusercontent.com/kodishmediacenter/appskodish/refs/heads/main/flyby.ps1" | iex
+    }
     '100' {
         Write-Host "Limpar a Pasta de Downloads"
         Remove-Item -Path "C:\down\" -Recurse -Force
