@@ -33,7 +33,7 @@ Write-Host "`n"
 Write-Host "100 Remover Pasta de Download"
 Write-Host "101 Reiniciar o Explorer "
 Write-Host "102 Medir a Velocidade da Internet "
-Write-Host "103 Baixar Windows Media Creator Tool (Windows 11)  `n"
+Write-Host "103 Baixar UUP Dump (Windows 11)  `n"
 Write-Host "═════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════`n`n"
 $opcao = Read-Host "`n Escolha uma Opção:"
 
