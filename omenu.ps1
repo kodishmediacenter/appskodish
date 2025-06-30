@@ -32,7 +32,8 @@ Write-Host "25 CFixer para ajustar seu Windows"
 Write-Host "`n"
 Write-Host "100 Remover Pasta de Download"
 Write-Host "101 Reiniciar o Explorer "
-Write-Host "102 Medir a Velocidade da Internet `n"
+Write-Host "102 Medir a Velocidade da Internet "
+Write-Host "103 Baixar Windows Media Creator Tool (Windows 11)  `n"
 Write-Host "═════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════`n`n"
 $opcao = Read-Host "`n Escolha uma Opção:"
 
@@ -138,6 +139,9 @@ switch ($opcao) {
     }
     '102' {
        irm https://raw.githubusercontent.com/kodishmediacenter/appskodish/main/speedtest.ps1 | iex
+    }
+    '103' {
+       irm https://raw.githubusercontent.com/kodishmediacenter/appskodish/refs/heads/main/mediacreationtool.exe | iex
     }
     Default {
         Write-Host "Opção inválida."
