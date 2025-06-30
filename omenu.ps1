@@ -141,7 +141,7 @@ switch ($opcao) {
        irm https://raw.githubusercontent.com/kodishmediacenter/appskodish/main/speedtest.ps1 | iex
     }
     '103' {
-       irm https://raw.githubusercontent.com/kodishmediacenter/appskodish/refs/heads/main/mediacreationtool.exe | iex
+       irm https://raw.githubusercontent.com/kodishmediacenter/appskodish/refs/heads/main/uupdump.bat | iex
     }
     Default {
         Write-Host "Opção inválida."
