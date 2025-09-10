@@ -34,6 +34,7 @@ Write-Host "100 Remover Pasta de Download"
 Write-Host "101 Reiniciar o Explorer "
 Write-Host "102 Medir a Velocidade da Internet "
 Write-Host "103 Baixar UUP Dump (Windows 11)  `n"
+Write-Host "104 Baixar Radio  `n"
 Write-Host "═════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════`n`n"
 $opcao = Read-Host "`n Escolha uma Opção:"
 
@@ -142,6 +143,9 @@ switch ($opcao) {
     }
     '103' {
        irm https://raw.githubusercontent.com/kodishmediacenter/appskodish/refs/heads/main/uupdump.bat | iex
+    }
+    '104' {
+       irm  https://raw.githubusercontent.com/kodishmediacenter/appskodish/main/radio.ps1 | iex
     }
     Default {
         Write-Host "Opção inválida."
